@@ -1,13 +1,19 @@
 import React from 'react';
+import './Alltopics.css'
 
 const AllTopics = ({ topic }) => {
-    const { id, name, logo, total } = topic
-    console.log(topic)
+    const { name, logo, total } = topic
+    // console.log(topic)
+
+    const btnclick = () => { console.log('clicked') }
     return (
-        <div>
-            <h2>Name: {name}</h2>
-            <p>{logo}</p>
-            <p>Total Questions: {total}</p>
+        <div className='topics-container'>
+            <img src={logo} alt="" />
+            <div className='topic-info'>
+                <h5>{name}</h5>
+                <p><small>Total Questions: {total}</small></p>
+                <button onClick={btnclick}>Strat Quiz</button>
+            </div>
         </div>
     );
 };

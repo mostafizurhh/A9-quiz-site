@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   margin: 0px 20px;
-  padding: 0px 10px;
+  background-image: repeating-radial-gradient(purple, coral);
 }
 
 .App-logo {

@@ -4,14 +4,14 @@ import AllTopics from '../AllTopics/AllTopics';
 import './Home.css'
 
 const Home = () => {
-    const subjects = useLoaderData()
+    const topics = useLoaderData();
+    // console.log(topics.data)
     return (
-        <div>
+        <div className='home-container'>
             {
-                subjects.map(topic => <AllTopics
+                topics.data.map(topic => <AllTopics
                     key={topic.id}
-                    topic={topic}
-                ></AllTopics>)
+                    topic={topic}></AllTopics>)
             }
         </div>
     );
