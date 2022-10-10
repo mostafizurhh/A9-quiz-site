@@ -16,3 +16,8 @@ button {
     border: none;
     border-radius: 3px;
 }
+
+button a {
+    text-decoration: none;
+    color: blueviolet;
+}
