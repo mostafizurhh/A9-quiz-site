@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(245, 245, 220, 0.725);
+}
+
+.navlink a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+.banner {
+    background-image: url("download.jpeg");
+    height: 10%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:576px) {
+    .banner {
+        background-image: url("retina\ \(1\).png");
+        height: 10%;
+    }
+}
