@@ -25,6 +25,10 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <div> <h2>Opps!!! Sorry, This page is not available.</h2></div>
     }
   ])
   return (
