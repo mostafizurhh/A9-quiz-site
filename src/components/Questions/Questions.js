@@ -12,6 +12,7 @@ const Questions = ({ questions }) => {
     // console.log(questions.options)
 
     const rightAnswer = () => {
+        // alert(`Right Answer: ${correctAnswer}`)
         toast.success(`Right Answer: ${correctAnswer}`, {
             position: toast.POSITION.TOP_RIGHT
         })
@@ -19,10 +20,10 @@ const Questions = ({ questions }) => {
     return (
         <div className='question-container'>
             <div className='question'>
-                <h6>{question}</h6>
+                <h6>{question.slice(3, -4)}</h6>
                 <div>
                     <button onClick={rightAnswer}><FontAwesomeIcon icon={faEye} style={{ marginLeft: 20 }}></FontAwesomeIcon></button>
-                    <ToastContainer autoClose={1700} />
+                    <ToastContainer autoClose={1700} pauseOnHover={false} />
                 </div>
             </div>
             <div className='options-container'>
