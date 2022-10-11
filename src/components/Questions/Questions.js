@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Questions = ({ questions }) => {
-    const { question, options, correctAnswer } = questions
+    const { question, correctAnswer } = questions
     // console.log(questions.options)
 
     const rightAnswer = () => {
@@ -20,17 +20,18 @@ const Questions = ({ questions }) => {
         <div className='question-container'>
             <div className='question'>
                 <h6>{question}</h6>
-                <button onClick={rightAnswer}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
-                <ToastContainer />
+                <div>
+                    <button onClick={rightAnswer}><FontAwesomeIcon icon={faEye} style={{ marginLeft: 20 }}></FontAwesomeIcon></button>
+                    <ToastContainer />
+                </div>
             </div>
-            {/* <div>
-                <button><p><small>{options}</small></p></button>
-            </div> */}
-            {/* {
-                questions.options.map(option => <Option
-                    option={option}
-                ></Option>)
-            } */}
+            <div className='options-container'>
+                {
+                    questions.options.map(option => <Option
+                        option={option}
+                    ></Option>)
+                }
+            </div>
         </div>
     );
 };

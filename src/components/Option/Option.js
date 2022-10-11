@@ -1,12 +1,11 @@
 import React from 'react';
+import './Option.css'
 
 const Option = ({ option }) => {
-    const { options } = option
-    console.log(option)
+    // console.log(option)
     return (
-        <div>
-            <p>{options}</p>
-
+        <div >
+            <button >{option}</button>
         </div>
     );
 };

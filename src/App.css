@@ -2,7 +2,7 @@
   text-align: center;
   margin: 20px;
   padding-bottom: 1px;
-  background-image: repeating-linear-gradient(coral, blueviolet)
+  background-image: repeating-linear-gradient(rgba(255, 127, 80, 0.886), rgba(137, 43, 226, 0.686))
 }
 
 .App-logo {
