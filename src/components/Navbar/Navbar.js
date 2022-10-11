@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className='navbar'>
-                <h4>Know React</h4>
+                <h5>WD Basics</h5>
                 <div className='navlink'>
                     <NavLink to='/home'>Home</NavLink>
                     <NavLink to='/statistics'>Statistics</NavLink>

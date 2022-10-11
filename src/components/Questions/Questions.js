@@ -12,7 +12,7 @@ const Questions = ({ questions }) => {
     // console.log(questions.options)
 
     const rightAnswer = () => {
-        toast.success(`${correctAnswer}`, {
+        toast.success(`Right Answer: ${correctAnswer}`, {
             position: toast.POSITION.TOP_RIGHT
         })
     }
@@ -28,10 +28,12 @@ const Questions = ({ questions }) => {
             <div className='options-container'>
                 {
                     questions.options.map(option => <Option
+                        key={option}
                         option={option}
                         right={correctAnswer}
                     ></Option>)
                 }
+
             </div>
         </div>
     );

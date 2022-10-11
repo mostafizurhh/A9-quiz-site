@@ -4,6 +4,10 @@
     justify-content: space-around;
 }
 
+h5 {
+    margin: 15px;
+}
+
 .navlink a {
     text-decoration: none;
     margin-left: 20px;
@@ -17,6 +21,12 @@
     color: white;
     display: flex;
     align-items: center;
+}
+
+.active {
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
 }
 
 @media screen and (max-width:576px) {
