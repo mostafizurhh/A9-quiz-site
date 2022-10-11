@@ -21,7 +21,7 @@ const Option = ({ option, right }) => {
     return (
         <div >
             <button onClick={rightAnswer}>{option}</button>
-            <ToastContainer />
+            <ToastContainer autoClose={1700} />
         </div>
     );
 };

@@ -11,7 +11,8 @@ const Statistics = () => {
             <h2>Statistics</h2>
             <Chart
                 key={totalData.data.id}
-                requiredData={totalData.data}></Chart>
+                requiredData={totalData.data}
+            ></Chart>
         </div>
     );
 };

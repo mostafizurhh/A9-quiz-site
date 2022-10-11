@@ -22,7 +22,7 @@ const Questions = ({ questions }) => {
                 <h6>{question}</h6>
                 <div>
                     <button onClick={rightAnswer}><FontAwesomeIcon icon={faEye} style={{ marginLeft: 20 }}></FontAwesomeIcon></button>
-                    <ToastContainer />
+                    <ToastContainer autoClose={1700} />
                 </div>
             </div>
             <div className='options-container'>

@@ -3,7 +3,7 @@ import './Blog.css'
 
 const Blog = () => {
     return (
-        <div>
+        <div className='blog-container'>
             <h3>Understand Something Important!!</h3>
             <div className='blog'>
                 <h4>What is the purpose of React Router?</h4>

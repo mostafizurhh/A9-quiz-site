@@ -7,7 +7,7 @@ const TopicDetails = () => {
     // console.log(topicQuestions.data.questions)
     return (
         <div>
-            <h4>Try your {topicQuestions.data.name} knowledge!!!!</h4>
+            <h4 style={{ margin: 10 }}>Try your {topicQuestions.data.name} knowledge!!!!</h4>
             {
                 topicQuestions.data.questions.map(questions => <Questions
                     key={questions.id}
