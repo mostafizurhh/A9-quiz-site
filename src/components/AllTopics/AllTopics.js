@@ -13,7 +13,7 @@ const AllTopics = ({ topic }) => {
             <div className='topic-info'>
                 <h5>{name}</h5>
                 <p><small>Total Questions: {total}</small></p>
-                <button><Link to={`/home/${id}`}>Strat Quiz</Link></button>
+                <p><Link to={`/topic/${id}`}>Strat Quiz</Link></p>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 .topics-container {
-    border: 3px solid brown;
+    border: 1px solid white;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -11,13 +11,13 @@
     justify-content: space-around;
 }
 
-button {
+.topics-container button {
     background-color: coral;
     border: none;
     border-radius: 3px;
 }
 
-button a {
+.topics-container button a {
     text-decoration: none;
     color: blueviolet;
 }
