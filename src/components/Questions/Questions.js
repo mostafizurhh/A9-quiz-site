@@ -29,6 +29,7 @@ const Questions = ({ questions }) => {
                 {
                     questions.options.map(option => <Option
                         option={option}
+                        right={correctAnswer}
                     ></Option>)
                 }
             </div>
