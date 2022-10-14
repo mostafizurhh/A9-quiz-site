@@ -1,4 +1,4 @@
-# React Quiz Cracker
+# WD Basics
 
 Live Site Link: https://react-quiz-cracker.netlify.app/
 
